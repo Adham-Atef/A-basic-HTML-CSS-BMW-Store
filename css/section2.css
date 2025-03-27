@@ -1,0 +1,122 @@
+.section2 {
+  padding-top: 100px;
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+.section2 .content .text {
+  text-align: center;
+}
+
+.section2 .content .text h2 {
+  display: inline;
+  position: relative;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.section2 .content .text h2::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3563c7;
+}
+
+.section2 .content .hello-items .item-mid {
+  margin: 0 5%;
+}
+
+.section2 .content .hello-items {
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.section2 .content .hello-items .item {
+  position: relative;
+  width: 25%;
+  /* min-width: 350px; */
+  /* min-height: 300px; */
+  border: 2px solid #365fb6;
+  border-radius: 10px;
+  padding: 30px 10px;
+  display: inline-block;
+  z-index: 22;
+  min-width: 250px;
+  max-width: 450px;
+  margin-bottom: 25px;
+  min-height: 300px;
+}
+
+.section2 .content .overlay {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: rgba(54, 95, 182, 0.5);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  z-index: -22;
+}
+
+.section2 .content .hello-items .item h3 {
+  transition: all 0.5s ease-in-out;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section2 .content .hello-items .item i {
+  color: #365fb6;
+  transition: 0.3s ease-in;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.section2 .content .hello-items .item p {
+  transition: all 0.5s ease-in-out;
+
+  font-size: 1rem;
+  color: grey;
+  margin: 50px 0px;
+}
+
+.section2 .content .hello-items .item:hover i {
+  color: hsl(221, 94%, 56%);
+}
+
+.section2 .content .hello-items .item:hover h3 {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.section2 .content .hello-items .item:hover p {
+  height: 100%;
+  width: 100%;
+  color: black;
+}
+
+.section2 .content .hello-items .item:hover .overlay {
+  height: 100%;
+  width: 100%;
+}
+
+.section2 .content .hello-items .item a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #35508a;
+  text-transform: uppercase;
+
+  transform: translate(-50%, -50%);
+}

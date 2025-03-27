@@ -1,0 +1,133 @@
+.section4 {
+  width: 100%;
+  min-height: 100vh;
+
+  background-color: white;
+
+  padding-top: 100px;
+  border-top: 1px solid black;
+}
+
+.section4 .content .title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section4 .content .title h2 {
+  display: inline;
+  position: relative;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.section4 .content .title h2::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3563c7;
+}
+
+.section4 .content .offer-items {
+  margin: auto;
+  text-align: center;
+  width: 90%;
+}
+
+.section4 .content .offer-items .item {
+  text-align: start;
+  position: relative;
+  border: 2px solid #365fb6;
+  border-radius: 10px;
+  display: inline-block;
+  z-index: 22;
+  min-width: 300px;
+  width: 25%;
+  max-width: 350px;
+
+  min-height: 250px;
+  max-height: 350px;
+  margin: 2.5%;
+}
+
+.section4 .content .overlay {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  background-color: rgba(54, 95, 182, 0.5);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  z-index: -22;
+}
+
+.section4 .content .offer-items .item .text {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  transition: all 0.5s ease-in-out;
+  margin-right: 10px;
+}
+
+.section4 .content .offer-items .item h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out color;
+  margin-bottom: 10px;
+}
+
+.section4 .content .offer-items .item i {
+  transition: 0.3s ease-in;
+
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  line-height: 2.5rem;
+  color: #365fb6;
+}
+
+.section4 .content .offer-items .item p {
+  transition: all 0.5s ease-in-out;
+
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: grey;
+}
+
+.section4 .content .offer-items .item:hover h3 {
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.section4 .content .offer-items .item:hover i {
+  color: hsl(221, 94%, 56%);
+}
+
+.section4 .content .offer-items .item:hover p {
+  height: 100%;
+  width: 100%;
+  color: black;
+}
+
+.section4 .content .offer-items .item:hover .overlay {
+  height: 100%;
+  width: 100%;
+}
+
+.section4 .content .offer-items .item a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+}

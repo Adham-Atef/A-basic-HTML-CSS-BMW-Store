@@ -1,0 +1,85 @@
+.section1 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: black;
+}
+
+.section1 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.616);
+  /* z-index: ; */
+}
+
+.section1 .content .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  text-align: start;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section1 .content .text p {
+  font-weight: lighter;
+  font-size: 0.8em;
+  color: #ffffffbe;
+  letter-spacing: 4px;
+  text-transform: lowercase;
+}
+
+.section1 .content .text button {
+  /* padding: 8px 25px; */
+  border-radius: 20px;
+  font-size: 0.8em;
+  border: 2px solid #6c7a89;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px 13px;
+}
+
+.section1 .content .text .btn1 {
+  /* color: #FFF;
+      background-color: #5a89d6; */
+  background: #35508a;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section1 .content .text .btn2 {
+  background: #6c7a89;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section1 .content .text .btn1:hover {
+  transform: translate(0px, -6px);
+}
+
+.section1 .content .text .btn2:hover {
+  transform: translate(0px, -6px);
+}

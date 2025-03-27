@@ -1,0 +1,118 @@
+.header {
+  width: 100vw;
+  height: 50px;
+  /* padding: 15px; */
+  position: fixed;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+.header .leftheader {
+  float: left;
+  /* position: relative; */
+}
+
+.header .leftheader .home {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+
+  position: absolute;
+  left: 30px;
+  top: 25%;
+}
+
+.header .leftheader .searchbar {
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  display: inline;
+  background-color: white;
+  border-radius: 20px;
+  margin-left: 20px;
+  padding: 5px 10px;
+  top: 20%;
+  left: 60px;
+}
+
+.header .leftheader .searchbar input {
+  border: none;
+  outline: none;
+  width: 150px;
+}
+
+.header .list {
+  float: right;
+  margin-top: 10px;
+}
+
+.header .list .main-list li {
+  display: inline;
+  position: relative;
+  margin-left: 0.8rem;
+}
+
+.header .list .main-list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.header .list .main-list li:last-child {
+  margin-right: 2.5rem;
+}
+
+.header .list .main-list .blog {
+  position: relative;
+}
+
+.header .list .main-list .blog .blog-div {
+  position: absolute;
+  left: 0rem;
+  width: 120px;
+  top: 20px;
+  border-radius: 10px;
+  border: solid 2px #3563c7;
+  padding: 20px 0px;
+  background-color: #fff;
+
+  display: none;
+}
+
+.header .list .main-list .blog .blog-div ul li {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.header .list .main-list .blog .blog-div ul li a {
+  margin-left: 0px;
+  display: block;
+  color: black;
+}
+
+.header .list .main-list .blog .blog-div ul li:last-child {
+  margin-bottom: -30px;
+}
+
+.header .list .normal-li a::after,
+.blog .t::after,
+.blog-div ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #3563c7;
+
+  transition: width 0.3s ease-in;
+}
+
+.header .list .normal-li:hover a::after,
+.blog:hover .t::after,
+.blog-div ul li:hover a::after {
+  width: 100%;
+}
+
+.header .list .main-list .blog:hover .blog-div {
+  display: block;
+}
